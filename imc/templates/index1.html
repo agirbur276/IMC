@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Peso altura</title>
+</head>
+<body>
+    <h2>IMC</h2>
+    <form action="/" method="post">
+        <label for="peso">Su peso:</label>
+        <input type="text" id="peso" name="peso" step="any" required><br><br>
+
+        <label for="altura">Su altura:</label>
+        <input type="text" id="altura" name="altura" step="any" required><br><br>
+
+        <input type="submit" value="Aceptar">
+    </form>
+<br>
+<div>
+        <p>Peso: {{ peso }}</p>
+        <p>Altura: {{ altura }}</p>
+        <p>IMC: {{ imc }}</p>
+        <p>sU IMC es: <b>{{ mensaje }}</b></p>
+        <b>{{ errornum }}</b>
+        <b>{{ error0 }}</b>
+</div>
+</body>
+</html>
